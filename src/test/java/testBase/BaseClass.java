@@ -100,7 +100,7 @@ public Properties p;
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.get(p.getProperty("appURL")); // reading url from properties file.
+		driver.get(p.getProperty("appURL3")); // reading url from properties file.
 		driver.manage().window().maximize();
 	}
 	

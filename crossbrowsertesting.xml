@@ -6,14 +6,15 @@
 		<listener class-name="utilities.ExtentReportManager"/>
 	</listeners>
 	
-  <test thread-count="5" name="chrometest">
+ <test thread-count="5" name="chrometest">
    	<parameter name="os" value="Windows" />
   	<parameter name="browser"  value="chrome"/>  
     <classes>
 		<class name="testCases.TC_002_LoginTest"/>
       <class name="testCases.TC_001_AccountRegistrationTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+   
   
   <test thread-count="5" name="edgetest">
    	<parameter name="os" value="Windows" />
@@ -24,14 +25,14 @@
     </classes>
   </test> <!-- Test -->
   
- <!-- <test thread-count="5" name="firefoxtest">
+  <test thread-count="5" name="firefoxtest">
    	<parameter name="os" value="Windows" />
   	<parameter name="browser"  value="firefox"/>  
     <classes>
 		<class name="testCases.TC_002_LoginTest"/>
       <class name="testCases.TC_001_AccountRegistrationTest"/>
     </classes>
-  </test>  -->
+  </test>  
   
   
 </suite> <!-- Suite -->
